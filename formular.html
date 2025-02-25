@@ -1,0 +1,176 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice 4.1.14  (Win32)">
+	<META NAME="CREATED" CONTENT="20250225;19120760">
+	<META NAME="CHANGED" CONTENT="20250225;19164337">
+</HEAD>
+<BODY LANG="de-DE" DIR="LTR">
+<P>&lt;!DOCTYPE html&gt;</P>
+<P>&lt;html lang=&quot;de&quot;&gt;</P>
+<P>&lt;head&gt;</P>
+<P>    &lt;meta charset=&quot;UTF-8&quot;&gt;</P>
+<P>    &lt;meta name=&quot;viewport&quot;
+content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</P>
+<P>    &lt;title&gt;Buchungsformular&lt;/title&gt;</P>
+<P>    &lt;style&gt;</P>
+<P>        /* Stile hier einf&uuml;gen */</P>
+<P>    &lt;/style&gt;</P>
+<P>&lt;/head&gt;</P>
+<P>&lt;body&gt;</P>
+<P>    &lt;form id=&quot;bookingForm&quot;&gt;</P>
+<P>        &lt;!-- Verstecktes Feld f&uuml;r die Teampartnernummer
+--&gt;</P>
+<P>        &lt;input type=&quot;hidden&quot; id=&quot;teampartner&quot;
+value=&quot;sonja20578299d&quot;&gt; &lt;!-- Wert f&uuml;r jede
+Landingpage anpassen --&gt;</P>
+<P><BR><BR>
+</P>
+<P>        &lt;p&gt;Reservieren Sie Ihren Wunschtermin f&uuml;r die
+kostenlose Teilnahme.&lt;/p&gt;</P>
+<P><BR><BR>
+</P>
+<P>        &lt;!-- Terminoptionen --&gt;</P>
+<P>        &lt;div class=&quot;termin-option&quot;&gt;</P>
+<P>            &lt;input type=&quot;radio&quot; name=&quot;termin&quot;
+value=&quot;25.02.2025&quot;&gt;</P>
+<P>            &lt;label&gt;25.02.2025 - 19:00 Uhr - Online
+(Deutsch)&lt;/label&gt;</P>
+<P>        &lt;/div&gt;</P>
+<P>&lt;div class=&quot;termin-option&quot;&gt;</P>
+<P>            &lt;input type=&quot;radio&quot; name=&quot;termin&quot;
+value=&quot;26.02.2025&quot;&gt;</P>
+<P>            &lt;label&gt;26.02.2025 - 19:00 Uhr - Online
+(Kroatisch)&lt;/label&gt;</P>
+<P>        &lt;/div&gt;</P>
+<P>        &lt;div class=&quot;termin-option&quot;&gt;</P>
+<P>            &lt;input type=&quot;radio&quot; name=&quot;termin&quot;
+value=&quot;27.02.2025&quot;&gt;</P>
+<P>            &lt;label&gt;27.02.2025 - 19:00 Uhr - Online
+(Kroatisch)&lt;/label&gt;</P>
+<P>        &lt;/div&gt;</P>
+<P>        &lt;div class=&quot;termin-option&quot;&gt;</P>
+<P>            &lt;input type=&quot;radio&quot; name=&quot;termin&quot;
+value=&quot;01.03.2025&quot;&gt;</P>
+<P>            &lt;label&gt;01.03.2025 - 16:00 Uhr - Galerija
+Solin&lt;/label&gt;</P>
+<P>        &lt;/div&gt;</P>
+<P>        &lt;div class=&quot;termin-option&quot;&gt;</P>
+<P>            &lt;input type=&quot;radio&quot; name=&quot;termin&quot;
+value=&quot;04.03.2025&quot;&gt;</P>
+<P>            &lt;label&gt;04.03.2025 - 19:00 Uhr - Online
+(Deutsch)&lt;/label&gt;</P>
+<P>        &lt;/div&gt;</P>
+<P>        &lt;div class=&quot;termin-option&quot;&gt;</P>
+<P>            &lt;input type=&quot;radio&quot; name=&quot;termin&quot;
+value=&quot;05.03.2025&quot;&gt;</P>
+<P>            &lt;label&gt;05.03.2025 - 20:00 Uhr - Online
+(Kroatisch)&lt;/label&gt;</P>
+<P>        &lt;/div&gt;</P>
+<P>        &lt;div class=&quot;termin-option&quot;&gt;</P>
+<P>            &lt;input type=&quot;radio&quot; name=&quot;termin&quot;
+value=&quot;07.03.2025&quot;&gt;</P>
+<P>            &lt;label&gt;07.03.2025 - 19:00 Uhr - Online
+(Kroatisch)&lt;/label&gt;</P>
+<P>        &lt;/div&gt;</P>
+<P>        &lt;div class=&quot;termin-option&quot;&gt;</P>
+<P>            &lt;input type=&quot;radio&quot; name=&quot;termin&quot;
+value=&quot;08.03.2025&quot;&gt;</P>
+<P>            &lt;label&gt;08.03.2025 - 16:00 Uhr - Galerija
+Solin&lt;/label&gt;</P>
+<P>        &lt;/div&gt;</P>
+<P>        &lt;!-- Weitere Terminoptionen hier einf&uuml;gen --&gt;</P>
+<P><BR><BR>
+</P>
+<P>        &lt;!-- Eingabefelder --&gt;</P>
+<P>        &lt;input type=&quot;text&quot; id=&quot;name&quot;
+placeholder=&quot;Trage hier bitte Vor- und Zuname ein&quot;
+required&gt;</P>
+<P>        &lt;input type=&quot;email&quot; id=&quot;email&quot;
+placeholder=&quot;Trage hier bitte deine Mailadresse ein&quot;
+required&gt;</P>
+<P><BR><BR>
+</P>
+<P>        &lt;!-- Button --&gt;</P>
+<P>        &lt;button type=&quot;button&quot;
+onclick=&quot;submitBooking()&quot;&gt;Jetzt reservieren&lt;/button&gt;</P>
+<P>    &lt;/form&gt;</P>
+<P><BR><BR>
+</P>
+<P>    &lt;script&gt;</P>
+<P>        function submitBooking() {</P>
+<P>            // Eingabefelder auslesen</P>
+<P>            let selectedTermin =
+document.querySelector('input[name=&quot;termin&quot;]:checked');</P>
+<P>            let name =
+document.getElementById(&quot;name&quot;).value.trim();</P>
+<P>            let email =
+document.getElementById(&quot;email&quot;).value.trim();</P>
+<P>            let teampartner =
+document.getElementById(&quot;teampartner&quot;).value; //
+Teampartnernummer aus dem versteckten Feld</P>
+<P><BR><BR>
+</P>
+<P>            // &Uuml;berpr&uuml;fen, ob alle Felder ausgef&uuml;llt
+sind</P>
+<P>            if (!selectedTermin || name === &quot;&quot; || email
+=== &quot;&quot;) {</P>
+<P>                console.error(&quot;Bitte w&auml;hlen Sie einen
+Termin und geben Sie Name und E-Mail ein.&quot;);</P>
+<P>                return;</P>
+<P>            }</P>
+<P><BR><BR>
+</P>
+<P>            // &Uuml;berpr&uuml;fen, ob die Teampartnernummer
+vorhanden ist</P>
+<P>            if (!teampartner) {</P>
+<P>                console.error(&quot;Fehler: Kein Teampartner
+gefunden&quot;);</P>
+<P>                return; // Verhindere das Absenden des Formulars</P>
+<P>            }</P>
+<P><BR><BR>
+</P>
+<P>            // Formulardaten vorbereiten</P>
+<P>            let formData = {</P>
+<P>                termin: selectedTermin.value,</P>
+<P>                name: name,</P>
+<P>                email: email,</P>
+<P>                teampartner: teampartner,  // Teampartner in das
+Formular einf&uuml;gen</P>
+<P>                teilgenommen: 'nein' // Standardwert f&uuml;r
+Teilnahme</P>
+<P>            };</P>
+<P><BR><BR>
+</P>
+<P>            console.log(&quot;Formulardaten:&quot;, formData); //
+Debugging-Log</P>
+<P><BR><BR>
+</P>
+<P>            // Formulardaten an den Make Webhook senden</P>
+<P>           
+fetch(&quot;https://hook.eu2.make.com/syx2i44241dc2ari4bn2g9gc31ee3gju&quot;,
+{  // Ersetze mit deiner Make Webhook-URL</P>
+<P>                method: &quot;POST&quot;,</P>
+<P>                body: JSON.stringify(formData),</P>
+<P>                headers: { &quot;Content-Type&quot;:
+&quot;application/json&quot; }</P>
+<P>            })</P>
+<P>            .then(response =&gt; response.text())</P>
+<P>            .then(data =&gt; {</P>
+<P>                console.log(&quot;Antwort:&quot;, data); //
+Antwort ausgeben</P>
+<P>                document.getElementById(&quot;bookingForm&quot;).reset();
+// Formular zur&uuml;cksetzen</P>
+<P>            })</P>
+<P>            .catch(error =&gt; {</P>
+<P>                console.error(&quot;Fehler beim Absenden:&quot;,
+error);</P>
+<P>            });</P>
+<P>        }</P>
+<P>    &lt;/script&gt;</P>
+<P>&lt;/body&gt;</P>
+<P>&lt;/html&gt;</P>
+</BODY>
+</HTML>
